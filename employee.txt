@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1 =  100000;
+    double num2 = 110000;
+    triple num3 =  90000;
+    char ch = 'A';
+
+    cout << num1 << endl;    // print integer
+    cout << num2 << endl;    // print double
+    cout << num3 << endl;    // print triple
+    cout << "character: " << ch << endl;    // print char
+    return 0;
+}
