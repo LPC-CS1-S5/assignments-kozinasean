@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+  
+// Find new value of x after replacing digit
+// "from" to "to"
+int replaceDig(int x, int from, int to)
+{
+    int result = 0;
+    int multiply = 1;
+  
+    while (x > 0)
+    {
+        int reminder = x % 10;
+  
+        // Required digit found, replace it
+        if (reminder == from)
+            result = result + to * multiply;
+  
+        else
+            result = result + reminder * multiply;
+  
+        multiply *= 10;
+        x = x / 10;
+    }
+    return result;
+}
